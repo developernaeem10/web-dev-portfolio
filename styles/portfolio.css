@@ -193,15 +193,30 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     font-size: 16px;
     margin-bottom: 24px;
 }
-.hide{
-    display: none;
-}
 
 /* responsive media query */
 
 @media screen and (max-width: 576px){
-    .skills-container, .resume-container, footer, .about-items {
+    .skills-container, 
+    .resume-container, 
+    footer, 
+    .banner,
+    .about-items,
+    nav,
+    ul {
        flex-direction: column;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .header{
+        background-image: none;
     }
     footer, .about{
         padding: 20px;
@@ -212,4 +227,13 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     footer input[type="text"], footer input[type="email"], footer textarea{
         width: calc(100% - 40px);
     }
+    .banner-profile-pic{
+        width: 100%;
+    }
+}
+
+/* Tablet specific media query */
+
+@media screen and (min-width: 576px) and (max-width: 992px ){ 
+    
 }
